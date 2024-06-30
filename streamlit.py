@@ -1,11 +1,11 @@
-import streamlit as st
+import Master_thesis_project.streamlit as st
 import pandas as pd
 import numpy as np
 from streamlit_folium import st_folium
 import folium
 from folium import IFrame
 from ast import literal_eval
-from utils import create_map, data_show
+from Master_thesis_project.utils import create_map, data_show
 
 
 def page_kappa():

@@ -1,4 +1,4 @@
-from utils import data_preprocessing, kafka_processing, send_api_data,process_message, data_show
+from Master_thesis_project.utils import data_preprocessing, kafka_processing, send_api_data,process_message, data_show
 from datetime import datetime
 import requests
 import pandas as pd
@@ -36,6 +36,7 @@ consumer = KafkaConsumer(
 i=0
 
 while True:
+        time_now = datetime.now()
         url = "https://prim.iledefrance-mobilites.fr/marketplace/estimated-timetable?LineRef=STIF%3ALine%3A%3AC01377%3A"
         headers = {'Accept': 'application/json','apikey': "OUe5wQhYRvtixxGZknneSVS1N4pR2O1x"}
         req = requests.get(url, headers=headers)
