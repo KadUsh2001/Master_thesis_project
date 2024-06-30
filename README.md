@@ -20,5 +20,6 @@ Before running the application, ensure you have Kafka installed and configured. 
 
 
 ## Usage
-1. Run kafka_pypeline.py
-2. Run streamlit.py
+1. Install requirements
+2. Run kafka_pypeline.py
+3. Run streamlit.py
