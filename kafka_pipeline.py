@@ -38,7 +38,7 @@ i=0
 while True:
         time_now = datetime.now()
         url = "https://prim.iledefrance-mobilites.fr/marketplace/estimated-timetable?LineRef=STIF%3ALine%3A%3AC01377%3A"
-        headers = {'Accept': 'application/json','apikey': "OUe5wQhYRvtixxGZknneSVS1N4pR2O1x"}
+        headers = {'Accept': 'application/json','apikey': "##INSERTYOURAPIKEY"}
         req = requests.get(url, headers=headers)
         print('Status:',req)
         test_pipeline = data_preprocessing(req)
